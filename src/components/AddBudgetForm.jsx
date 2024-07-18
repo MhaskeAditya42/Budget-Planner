@@ -37,7 +37,7 @@ const AddBudgetForm = () => {
             type="text"
             name="newBudget"
             id="newBudget"
-            placeholder="e.g., Groceries"
+            placeholder="e.g., Stationary"
             required
             ref={focusRef}
           />
@@ -49,7 +49,7 @@ const AddBudgetForm = () => {
             step="0.01"
             name="newBudgetAmount"
             id="newBudgetAmount"
-            placeholder="e.g., $350"
+            placeholder="e.g., Rs. 350"
             required
             inputMode="decimal"
           />
@@ -60,7 +60,7 @@ const AddBudgetForm = () => {
             isSubmitting ? <span>Submitting…</span> : (
               <>
                 <span>Create budget</span>
-                <CurrencyDollarIcon width={20} />
+                
               </>
             )
           }
